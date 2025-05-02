@@ -1,0 +1,14 @@
+.container {
+  background-color: #181a1b;
+  color: #e0e0e0;
+  display: flex;
+  gap: 10%;
+  height: 100vh;
+  padding: 5vw;
+  width: 100vw;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
