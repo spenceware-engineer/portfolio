@@ -38,7 +38,8 @@ export default defineType({
     defineField({
       name: 'bio',
       title: 'Bio',
-      type: 'string',
+      type: 'array',
+      of: [{ type: 'block' }],
       validation: (rule) => rule.required(),
     }),
     defineField({
@@ -57,8 +58,20 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'resumeBtnLabel',
+      title: 'Resume Button Label',
+      type: 'string',
+    }),
+    defineField({
+      name: 'resumeDownloadName',
+      title: 'Resume Download Name',
+      type: 'string',
+      description:
+        'Enter the name to use for the downloaded resume file, excluding the file extension.',
+    }),
+    defineField({
       name: 'ctaBtnLabel',
-      title: 'Label for Call to Action Button',
+      title: 'Call to Action Button Label',
       type: 'string',
     }),
     defineField({

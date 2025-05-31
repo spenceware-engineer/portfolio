@@ -1,3 +1,5 @@
+'use client'
+
 import styles from './hero.module.css'
 import { Avatar, Button, Typography } from '@mui/material'
 import { client } from '../../sanity/lib/client'
